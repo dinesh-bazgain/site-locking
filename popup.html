@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Lock</title>
+  <style>
+    body { width: 300px; padding: 15px; font-family: Arial, sans-serif; }
+    .section { margin: 10px 0; }
+    input { width: 100%; padding: 8px; margin: 5px 0; }
+    button { margin-top: 10px; padding: 8px 16px; }
+    #status { color: red; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div id="passwordSection" class="section">
+    <h3>Password Management</h3>
+    <div id="changePassword">
+      <input type="password" id="currentPassword" placeholder="Current password">
+      <input type="password" id="newPassword" placeholder="New password">
+      <input type="password" id="confirmPassword" placeholder="Confirm new password">
+      <button id="updatePassword">Update Password</button>
+    </div>
+    <p id="status"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

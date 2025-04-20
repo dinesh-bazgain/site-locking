@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Social Media Lock",
+  "version": "1.0",
+  "description": "Password-protect access to social media",
+  "permissions": ["scripting", "tabs", "storage", "unlimitedStorage"],
+  "host_permissions": ["*://*.facebook.com/*", "*://*.instagram.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [{
+    "resources": ["inject.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
